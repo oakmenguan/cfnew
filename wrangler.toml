@@ -1,3 +1,4 @@
+# Deployed from GitHub by Cloudflare Workers Builds
 name = "cfnew"
 main = "明文源吗"
 compatibility_date = "2026-01-20"
