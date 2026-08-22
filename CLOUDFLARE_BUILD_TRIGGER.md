@@ -3,3 +3,5 @@
 This commit verifies the GitHub to Cloudflare production build connection for `cfnew`.
 
 The repository connection was rebuilt with the dedicated `cfnew build token`.
+
+Browser-authored commit used to verify Cloudflare webhook delivery.
