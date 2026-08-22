@@ -1,0 +1,8 @@
+name = "cfnew"
+main = "明文源吗"
+compatibility_date = "2026-01-20"
+keep_vars = true
+
+[[kv_namespaces]]
+binding = "C"
+id = "aab28e271e0e4c2b8d40407c5feb7e9a"
