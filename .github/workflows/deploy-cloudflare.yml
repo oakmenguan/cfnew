@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "明文源吗"
+      - "少年你相信光吗"
       - "wrangler.toml"
       - ".github/workflows/deploy-cloudflare.yml"
   workflow_dispatch:
@@ -24,9 +24,12 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Prepare stable Worker entry point
+        run: cp "少年你相信光吗" worker.js
       - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           wranglerVersion: "4.125.0"
+          command: deploy worker.js
